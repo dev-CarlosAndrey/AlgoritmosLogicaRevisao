@@ -1,0 +1,41 @@
+RESPOSTAS REVISÃO - ALGORITIMOS E LÓGICA DE PROGRAMAÇÃO
+
+Questão 1 - A compilação de um código fonte escrito em C, se dá por meio de 4 etapas, que são: 
+
+1º Etapa - Pré processamento: Nessa etapa o texto ele é tranformado lexicalmente. O resultado dessa tranformação é chamado de unidade de compilação. 
+Além disso nessa etapa é onde os espaços desnecessários são retirados, ocorre a substituição dos macros e a inclusão de textos indicados pelas diretivas #include <stdio.h>.
+
+2° Etapa - Compilação: Aqui é onde ocorre a análise sintática e semântica de cada unidade 
+de compilação, se estiver sem erros é gerado um código assembler correspondente.
+
+3º Etapa - Montagem: Nessa etapa ocorre a geração do código-objeto. Os comando assembler são tranformados 
+em liguagem de máquina (01010101), depois disso só falta resolver as referências a objetos e 
+funções implementadas em outro códigos-objetos, como por exemplo a uma função que pertence a uma biblioteca do sistema.
+
+4º Etapa - Ligação: Aqui é onde ocorre a combinação de todos os códigos-objetos que compõe o programa e a resolução das referências não resolvidas na etapa anterior. O resultado é um código EXECUTÁVEL. 
+
+Questão 2 - Qual o efeito dos seguintes comandos de compilação ?
+
+a - gcc prog.c -o prog -> Gera um arquivo executável com nome prog.exe ou prog.out(Linux).
+b - gcc prog.c -> Gera um arquivo executável com nome a.exe.
+c - gcc prog.c -o aux.c entsai.c -> Aqui acontece um erro, pois o GCC não pode gerar um arquivo de codigo fonte compilado como saída de uma compilação.
+d - gcc progA.c progB.o -> Gera um arquivo executavel com nome a.exe ou no linux a.out.
+
+Questão 3 - São possiveis dois tipos de comentários -> Lembrando que comentarios são muito bons para documentar o código e explicar alguma funcinalidade de certa parte que seja complexa. O compilador ignora essas linhas na hora da compilação do programa.
+
+                // Primeira maneira - Forma simples e recomendada para comentários pequenos
+                /* Segunda maneira - Forma simples também, porém recomendada para comentários com mais linhas  */
+
+Questão 18 - 
+
+    // a) printf("O valor  é %d", &numero);
+        printf("O valor é: %d", numero); -> Forma Correta
+
+    // b) scanf("%d%d", &numero1, numero2); Faltou  & comercial na outra variavel pra apontar que segundo valor.
+        scanf("%d%d", &numero1, &numero2); -> Forma Correta
+
+    // c) printf("A soma  é %d \n,"x+y); A virgula fica fora das aspas.
+        printf("A soma é %d \n", x+y); -> Forma Correta
+
+    //d) scanf("d", valor); Falta adiciar a %, diretiva. 
+        scanf("%d", valor); -> Forma Correta
