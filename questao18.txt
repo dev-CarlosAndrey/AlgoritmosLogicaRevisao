@@ -1,0 +1,14 @@
+Questão 18 - 
+
+    // a) printf("O valor  é %d", &numero);
+        printf("O valor é: %d", numero); -> Forma Correta
+
+    // b) scanf("%d%d", &numero1, numero2); Faltou  & comercial na outra variavel pra apontar que segundo valor.
+        scanf("%d%d", &numero1, &numero2); -> Forma Correta
+
+    // c) printf("A soma  é %d \n,"x+y); A virgula fica fora das aspas.
+        printf("A soma é %d \n", x+y); -> Forma Correta
+
+    //d) scanf("d", valor); Falta adiciar a %, diretiva. 
+        scanf("%d", valor); -> Forma Correta
+
