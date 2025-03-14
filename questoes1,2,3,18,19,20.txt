@@ -39,3 +39,56 @@ Questão 18 -
 
     //d) scanf("d", valor); Falta adiciar a %, diretiva. 
         scanf("%d", valor); -> Forma Correta
+
+Questao 19 - 
+
+#include <stdio.h>
+
+int main(void)
+{
+    int a = 4;
+    double b = 5.7;
+    int c, d;
+
+    printf("%d %f\n", a, b); ->  SAÍDA // 4 e 5.7
+
+    c = 3;  
+    d = a + 2;
+
+    printf("%d %d\n", c, d); -> SAÍDA // 3 e 6
+
+    a = 2;
+    b = c + d;
+
+    printf("%d %f\n", a, b); -> SAÍDA // 2, 9
+    printf("%d %d\n", c, d); -> SAÍDA // 3, 6
+    return 0;
+}
+
+Questão 20 - 
+
+#include <stdio.h>
+    int main (void) {
+
+        int num;
+        printf("Digite um numero: ");
+        scanf("%d", &num);
+
+        if (num > 0) {
+            printf("num. positivo\n");
+        }
+        if (num >= 10){
+            printf("num. maior ou igual a 10\n");
+        } else {
+            printf("num. menor que 10\n");
+        }
+
+    return 0;
+}
+
+SAÍDAS SE O USUÁRIO DIGITAR 6:
+num. positivo.
+num.menor que 10.
+
+SAÍDA SE O USUÁRIO DIGITAR -6:
+num. menor que 10.
